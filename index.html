@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maene</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="video-container" id="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="./assets/videos/background_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content" id="text-content">
+            <h1>Welcome to Maene</h1>
+            <div class="animated-text" id="sanksrit-animatedText"></div>
+            <div class="animated-text animated-text-eng" id="english-animatedText"></div>
+            <div class="home-page">
+                <button class="common-button start-button" id="start-button">Start</button>
+                <button class="common-button anatomy-button" id="anatomy" onclick="getAnatomy()">Anatomy</button>
+            </div>
+        </div>
+    </div>
+    <div class="blocks-container" id="blocks-container" style="display: none;">
+        <div class="left-wing">
+            <div class="block block-left" id="day-1">Monday</div>
+            <div class="block block-left" id="day-2">Tuesday</div>
+            <div class="block block-left" id="day-3">Wednesday</div>
+        </div>
+        <div class="right-wing">
+            <div class="block block-right" id="day-4">Thursday</div>
+            <div class="block block-right" id="day-5">Friday</div>
+            <div class="block block-right" id="day-6">Saturday</div>
+        </div>
+    </div>
+    <button class="common-button back-button" id="back-button" style="display: none;">Back</button>
+
+    
+    <div id="exercise-container" style="display: none;">
+        <div id="monday"></div>
+        <div id="tuesday"></div>
+        <div id="wednesday"></div>
+        <div id="thursday"></div>
+        <div id="friday"></div>
+        <div id="saturday"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

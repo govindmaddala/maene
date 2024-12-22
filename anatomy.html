@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-container" id="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="./assets/videos/background_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown()">Exercise By</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="#option1">Option 1</a>
+                    <a href="#option2">Option 2</a>
+                    <a href="#option3">Option 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="body"></div>
+        <div class="footer"></div>
+    </div>
+    <script src="exercise.js"></script>
+    
+</body>
+</html>
